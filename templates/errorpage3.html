@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Downloader</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Cinzel', serif;
+		}
+		.bgimg{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(27deg , #2471A3 50% , #1C2833 50%);
+        }
+        .centerdiv{
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: black;
+            transform: translate(-50% , -50%);
+            background-image: linear-gradient(27deg , #1C2833 50% , #2471A3 50%);
+            box-shadow: 0 1px 6px rgba(0,0,0,0.12) , 0 1px 4px rgba(0,0,0,0.12);
+        }
+        .bgimg .centerdiv h2{
+            color: white;
+            max-width: 250px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            word-spacing: 10px;
+            margin-left: 50px;
+            margin-top: 35%;
+            margin-bottom: 50px;
+            text-shadow: -2px 2px 1px #1C2833;
+        }
+        .glow {
+            color: white;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+                }
+          
+                to {
+                    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+                }
+            }
+        }
+	</style>
+</head>
+<body>
+	<div class="bgimg">
+		<div class="centerdiv">
+			<h2 class="glow">error in downloading video file !!!</h2>
+		</div>
+	</div>
+
+</body>
+</html>

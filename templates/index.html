@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Login Page</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Cinzel', serif;
+        }
+
+        .bgimg{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(27deg , #2471A3 50% , #1C2833 50%);
+        }
+
+        .centerdiv{
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: black;
+            transform: translate(-50% , -50%);
+            background-image: linear-gradient(27deg , #1C2833 50% , #2471A3 50%);
+            box-shadow: 0 1px 6px rgba(0,0,0,0.12) , 0 1px 4px rgba(0,0,0,0.12);
+        }
+
+        #profilepic{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: relative;
+            top: -60px;
+            left: calc((350px - 120px) / 2);
+        }
+
+        h2{
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2em;
+            word-spacing: 10px;
+            margin-top: 60px;
+            margin-bottom: 50px;
+            text-shadow: -2px 2px 1px #1C2833;
+        }
+
+        .inputbox{
+            width: calc(100% - 65px);
+            height: 30px;
+            display: block;
+            margin: auto;
+            padding: 0px 10px;
+            box-sizing: border-box;
+        }
+
+        ::placeholder{
+            letter-spacing: 2px;
+            color: black;
+        }
+
+        button{
+            width: calc(100% - 200px);
+            height: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            color: white;
+            background-color: #2471A3;
+            border: none;
+        }
+        #adobox{
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        #vdobox{
+            margin-left: 15px;
+        }
+        label{
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+</head>
+<body>
+    <div class="bgimg">
+        <div class="centerdiv">
+            
+            <h2>yt data downloader</h2>
+            
+            <form action="/dwn" method="get">
+                <div>
+                    <input type="text" name="text2" class="inputbox" placeholder="enter url" required="">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" name="ado" id="adobox">
+                    <label for="adobox">AUDIO FORMAT</label>
+                    <input type="checkbox" name="vdo" id="vdobox">
+                    <label for="vdobox">VIDEO FORMAT</label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Download</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
