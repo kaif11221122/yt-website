@@ -37,7 +37,7 @@ googletrans==2.4.0
 gTTS==2.1.1
 gTTS-token==1.1.3
 gunicorn==20.0.4
-httplib2==0.17.3
+httplib2==0.19.0
 idna==2.9
 imageio==2.8.0
 imageio-ffmpeg==0.4.1
